@@ -10,7 +10,6 @@ import javax.swing.JOptionPane;
  * @author FAHAD FATEH
  */
 public abstract class Message {
-     
     public static void show(Object message){
         JOptionPane.showConfirmDialog(null, message);
     }
