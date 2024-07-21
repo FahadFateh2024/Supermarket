@@ -8,4 +8,4 @@ public  abstract class setPassword {
         }
         return p;
     }
-}
+} // end of class
