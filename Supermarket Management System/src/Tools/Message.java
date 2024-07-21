@@ -12,5 +12,5 @@ import javax.swing.JOptionPane;
 public abstract class Message {
     public static void show(Object message){
         JOptionPane.showConfirmDialog(null, message);
-    }
+    } // end of main method
 }
