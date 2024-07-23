@@ -197,7 +197,7 @@ public class Home extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Here You Can Find : ");
+        jLabel3.setText("Here, You Can Find : ");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 180, 350, 40));
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -212,8 +212,8 @@ public class Home extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 60)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(204, 0, 51));
-        jLabel2.setText("Welcome to Our Supermarket");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, -1, -1));
+        jLabel2.setText("All You Need Is Here, Engoy Shopping!");
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, -1, -1));
 
         jLabel1.setBackground(java.awt.Color.darkGray);
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -235,8 +235,8 @@ public class Home extends javax.swing.JFrame {
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         int a = JOptionPane.showConfirmDialog(null, "Do you want to logout the system?", "Select", JOptionPane.YES_NO_OPTION);
         if (a == 0) {
+            new LoginPage().setVisible(true);       
             setVisible(false);
-            new LoginPage().setVisible(true);
         }
     }//GEN-LAST:event_jButton6ActionPerformed
 

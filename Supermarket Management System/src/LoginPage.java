@@ -36,14 +36,15 @@ public class LoginPage extends javax.swing.JFrame {
     private void initComponents() {
 
         lblError = new javax.swing.JLabel();
-        txtUser = new javax.swing.JTextField();
-        txtPassword = new javax.swing.JPasswordField();
-        btnLogin = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         btnCancel = new javax.swing.JButton();
+        txtUser = new javax.swing.JTextField();
+        txtPassword = new javax.swing.JPasswordField();
+        btnLogin = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -51,57 +52,27 @@ public class LoginPage extends javax.swing.JFrame {
 
         lblError.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         lblError.setForeground(new java.awt.Color(255, 0, 0));
-        getContentPane().add(lblError, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 520, 461, 40));
+        getContentPane().add(lblError, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 520, 461, 40));
 
-        txtUser.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        txtUser.setForeground(new java.awt.Color(102, 102, 102));
-        txtUser.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                txtUserMousePressed(evt);
-            }
-        });
-        getContentPane().add(txtUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 180, 447, 34));
-
-        txtPassword.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        txtPassword.setForeground(new java.awt.Color(102, 102, 102));
-        txtPassword.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                txtPasswordMousePressed(evt);
-            }
-        });
-        getContentPane().add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, 447, 34));
-
-        btnLogin.setBackground(new java.awt.Color(0, 0, 51));
-        btnLogin.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnLogin.setForeground(new java.awt.Color(102, 255, 0));
-        btnLogin.setText("LOGIN");
-        btnLogin.setBorder(null);
-        btnLogin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnLoginActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 440, 220, 34));
-
-        jPanel1.setBackground(new java.awt.Color(0, 0, 153));
+        jPanel1.setBackground(new java.awt.Color(102, 0, 102));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Password");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 260, 100, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 210, 100, -1));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Username");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 150, 90, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 110, 90, -1));
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(102, 255, 0));
         jLabel4.setText("Login Here");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 170, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 170, -1));
 
-        btnCancel.setBackground(new java.awt.Color(0, 0, 51));
+        btnCancel.setBackground(new java.awt.Color(51, 51, 51));
         btnCancel.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnCancel.setForeground(new java.awt.Color(255, 0, 0));
         btnCancel.setText("CANCEL");
@@ -113,9 +84,44 @@ public class LoginPage extends javax.swing.JFrame {
                 btnCancelActionPerformed(evt);
             }
         });
-        jPanel1.add(btnCancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 440, 210, 34));
+        jPanel1.add(btnCancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 330, 170, 30));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 610));
+        txtUser.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        txtUser.setForeground(new java.awt.Color(102, 102, 102));
+        txtUser.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                txtUserMousePressed(evt);
+            }
+        });
+        jPanel1.add(txtUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 360, 34));
+
+        txtPassword.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        txtPassword.setForeground(new java.awt.Color(102, 102, 102));
+        txtPassword.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                txtPasswordMousePressed(evt);
+            }
+        });
+        jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 240, 360, 34));
+
+        btnLogin.setBackground(new java.awt.Color(51, 51, 51));
+        btnLogin.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        btnLogin.setForeground(new java.awt.Color(102, 255, 0));
+        btnLogin.setText("LOGIN");
+        btnLogin.setBorder(null);
+        btnLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLoginActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 330, 180, 30));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 70, 590, 430));
+
+        jLabel3.setBackground(new java.awt.Color(51, 0, 51));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/back2.jpg"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, 640));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -209,6 +215,7 @@ public class LoginPage extends javax.swing.JFrame {
     private javax.swing.JButton btnLogin;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblError;
